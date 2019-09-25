@@ -1,7 +1,8 @@
-package com.pu.challengepu
+package com.pu.challengepu.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.pu.challengepu.R
 
 class MainActivity : AppCompatActivity() {
 

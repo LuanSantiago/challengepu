@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.pu.challengepu.view.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_identificationFragment"
+            app:destination="@id/identificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/identificationFragment"
+        android:name="com.pu.challengepu.view.fragment.IdentificationFragment"
+        android:label="fragment_identification"
+        tools:layout="@layout/fragment_identification" >
+        <action
+            android:id="@+id/action_identificationFragment_to_listOfferFragment"
+            app:destination="@id/listOfferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfferFragment"
+        android:name="com.pu.challengepu.view.fragment.ListOfferFragment"
+        android:label="fragment_list_offer"
+        tools:layout="@layout/fragment_list_offer" />
+</navigation>
